@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+
+:root {
+    --header-font: 'Montserrat Alternates', sans-serif;
+    --main-font: 'Caveat', cursive;
+}
+
+body {
+    max-width: 980px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+* {
+    margin: auto;
+    font-family: var(--main-font);
+}
+
+header .logo img {
+    height: 75px;
+}
+
+header p {
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--header-font);
+    text-decoration: underline;
+    font-size: 40px;
+    cursor: default;
+    padding: 0px 0px 3px 13px;
+}
+
+header h1:hover {
+    color: rgb(61, 61, 61);
+    font-size: 42px;
+    padding: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+header .logo {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header .buttons {
+    margin: 0;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header .buttons div {
+    margin: 0px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .buttons div:hover {
+    font-size: 24px;
+    padding-bottom: 0px;
+}
+
+header .buttons img {
+    margin: 0px;
+    margin-top: 5px;
+    width: 35px;
+    cursor: pointer;
+}
+
+header .buttons img:hover {
+    width: 40px;
+}
+
+header div label {
+    margin: 0px;
+}
+
+header > div > label > input {
+    display: none;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\NAV/////////////////////////// */
+
+nav {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+nav a {
+    padding: 4px 20px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 22px;
+    padding: 1px 20px;
+}
