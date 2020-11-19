@@ -17,12 +17,12 @@ body {
 }
 
 header .logo img {
-    height: 75px;
+    height: 65px;
 }
 
 header p {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     cursor: default;
 }
@@ -31,15 +31,16 @@ header h1 {
     text-align: center;
     font-family: var(--header-font);
     text-decoration: underline;
-    font-size: 40px;
+    font-size: 30px;
     cursor: default;
     padding: 0px 0px 3px 13px;
 }
 
 header h1:hover {
     color: rgb(61, 61, 61);
-    font-size: 42px;
+    font-size: 32px;
     padding: 0px;
+    padding-bottom: 1px;
 }
 
 header {
@@ -69,6 +70,7 @@ header .buttons div {
     width: 35px;
     text-align: center;
     cursor: pointer;
+
 }
 
 header .buttons div:hover {
@@ -91,16 +93,35 @@ header div label {
     margin: 0px;
 }
 
-header > div > label > input {
+header > div > input {
     display: none;
+}
+
+@media (min-width: 769px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h1:hover {
+        color: rgb(61, 61, 61);
+        font-size: 42px;
+        padding: 0px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    header .logo img {
+        height: 75px;
+    }
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\NAV/////////////////////////// */
 
 nav {
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: none;
 }
 
 nav a {
@@ -117,4 +138,19 @@ nav a:hover {
     border: 1px solid black;
     font-size: 22px;
     padding: 1px 20px;
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr)
+    }
+
+    header > div > label {
+        display: none;
+    }
+}
+
+#burger-botton:checked ~ body nav {
+    display: none;
 }
