@@ -92,10 +92,10 @@ header .buttons img:hover {
 header div label {
     margin: 0px;
 }
-
+/* 
 header > div > input {
     display: none;
-}
+} */
 
 @media (min-width: 769px) {
     header h1 {
@@ -152,5 +152,5 @@ nav a:hover {
 }
 
 #burger-botton:checked ~ body nav {
-    display: none;
+    display: block;
 }
