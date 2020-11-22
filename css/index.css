@@ -35,9 +35,9 @@ header .logo img {
     height: 65px;
 }
 
-header .logo div {
+/* header .logo div {
 
-}
+} */
 
 header .logo div h1 {
     font-family: var(--header-font);
