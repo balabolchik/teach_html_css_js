@@ -110,7 +110,7 @@ header .header-nav div div {
     border: 1px solid black;
     border-radius: 5px;
     background-color: black;
-    background-image: url(/img/basket-white.png);
+    background-image: url(../img/basket-white.png);
     background-size: 28px 20px;
     background-position: center;
     width: 113px;
@@ -121,7 +121,7 @@ header .header-nav div div {
 header .header-nav div div:hover {
     background-size: 35px 25px;
     background-color: white;
-    background-image: url(/img/basket.png);
+    background-image: url(../img/basket.png);
 }
 
 header .header-nav div label {
